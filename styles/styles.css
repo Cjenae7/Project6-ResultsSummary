@@ -1,0 +1,220 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: inline;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+
+@media only screen and (min-width: 1224px) and (max-width: 1440px) {
+  /* Styles */
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 200px 450px;
+}
+.result {
+  background-image: linear-gradient(hsl(241, 81%, 54%), hsl(241, 81%, 54%));
+  text-align: center;
+  border-radius: 1rem;
+  padding: 20px;
+  width: 220px;
+}
+
+h3 {
+  color: hsl(252, 100%, 67%);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.overall-score {
+  color: white;
+  font-size: 2.4rem;
+}
+
+h1 {
+  color: hsl(252, 100%, 67%);
+  font-size: 0.6rem;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 100%;
+  padding: 20px;
+  margin: 15px 45px;
+}
+
+h2 {
+  color: white;
+  font-size: 1rem;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: hsl(252, 100%, 67%);
+  font-size: 0.7rem;
+  font-style: normal;
+}
+
+.summary-text {
+  background-color: hsl(0, 0, 100%);
+}
+
+.summary-list {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 1rem;
+}
+
+/* Listed Categories*/
+.reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsl(0, 100%, 98%);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 98%);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 100%, 98%);
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 98%);
+}
+
+/*The Scores of each Category*/
+.score {
+  color: hsl(224, 30%, 27%);
+  word-spacing: 30px;
+  display: inline;
+  text-align: right;
+}
+.score1 {
+  color: hsl(224, 30%, 27%);
+  word-spacing: 44px;
+  display: inline;
+  text-align: right;
+}
+
+/*Click Continue Button*/
+
+button {
+  text-align: center;
+  align-items: center;
+  width: 230px;
+  border-radius: 2rem;
+  margin-left: 20px;
+}
+.continue {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  padding: 10px 0px;
+  font-size: 0.8rem;
+}
